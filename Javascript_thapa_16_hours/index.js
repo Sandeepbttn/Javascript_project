@@ -141,4 +141,118 @@
 /////////////////////////////////////////////////////////////ARRAY IN JAVASCRIPT//////////////////////////////////////////////////////////////////
 
 
+///////////////////// array example
+
+// var myFriends = ['ramesh',22,"male",'arjun',20,"male",'visal',true];
+
+// console.log(myFriends);
+
+///////////////////////////////// traversal in Array
+
+
+// var myFriends = ['ramesh',22,"male",'arjun',20,"male",'visal',true];
+
+// console.log(myFriends[3]);
+
+
+////////////// if we want to check the length of element of an array
+
+// console.log(myFriends.length);
+
+
+////////  we use for loop to navigate
+
+
+//////////////////////////// for in loop
+
+// for (let i in myFriends){
+//     console.log(i);
+// }
+
+
+/////////////////////// for of loop
+
+// for (let i of myFriends){
+//     console.log(i);
+// }
+
+
+//////////////////////// for each loop
+
+// myFriends.forEach(function(element,index,array){
+//     console.log(element + "index :" + index + " " + array);     //we cant use break statement in for each
+// })
+
+
+///////////////////////Searching and filter in an Array
+
+
+//////////array.prototype.indexOf()
+
+// var myFriends = ['ramesh',22,"male",'arjun',22,"male",'visal',true];
+
+
+// console.log(myFriends.indexOf(22));
+// console.log(myFriends.indexOf(22,3));
+
+//it is case sensitive, return the first index or -1 if not found
+
+
+//////////////lastIndexOf()
+
+
+// var myFriends = ['ramesh',22,"male",'arjun',22,"male",'visal',true];
+
+
+// console.log(myFriends.lastIndexOf(22));
+// console.log(myFriends.lastIndexOf(22,3));
+
+///////////////////////includes()
+
+
+
+// var myFriends = ['ramesh',22,"male",'arjun',22,"male",'visal',true];
+
+
+// console.log(myFriends.includes(21));
+
+
+/////////////////////////////find()
+
+// const price =[100,230,500,430,700];
+
+// console.log(price.find((curValue)=>{
+//     return curValue <500;
+// }));
+
+////////////////////////////findIndex()
+
+// const price =[100,230,500,430,700];
+
+// console.log(price.findIndex((curValue)=>{
+//     return curValue <500;
+// }));
+
+
+/////////////////////////////////////////////filter()
+
+
+// const price =[100,230,500,430,700];
+
+// console.log(price.filter((curValue)=>{
+//     return curValue <500;
+// }));
+
+
+
+///////////////////////////////////how to sort and compare an array
+
+// const price =[100,230,10000,500,430,700];
+
+// console.log(price.sort());
+
+//there is bug it convert into string and than sort it
+
+
+
 
