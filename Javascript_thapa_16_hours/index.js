@@ -254,5 +254,141 @@
 //there is bug it convert into string and than sort it
 
 
+///////////////////////////////////how to insert, add, replace and delete elements in Array (CRUD)//////////
 
+//////////////////push()
+
+// const price =[100,230,10000,500,430,700];
+
+// price.push(555,444,333);
+// console.log(price);
+
+//////////////////////unshift()
+
+// const price =[100,230,10000,500,430,700];
+
+// price.unshift(555,444,333);
+// console.log(price);
+
+////////////////////////////pop()
+
+// const price =[100,230,10000,500,430,700];
+// console.log(price)
+
+// price.pop();
+// console.log(price);
+
+
+//////////////////////////////////////shift()
+
+// const price =[100,230,10000,500,430,700];
+
+// console.log(price);
+// price.shift();
+// console.log(price);
+
+
+//////////////////////////////////////////////////using slipce method for all CRUD/
+
+// const price =[100,230,10000,500,430,700];
+
+// price.splice(3,2,777);           //splice(index,delete number of elements,value want ot add)
+// console.log(price);
+
+//// another example
+
+// const indexOfPrice = price.indexOf(500);
+// console.log(price);
+
+// if(indexOfPrice!= -1){
+//     price.splice(indexOfPrice,1,501);           //splice(index,delete number of elements,value want ot add)
+// console.log(price);
+// }else{
+//     console.log('no such data found');
+// }
+
+
+
+/////////////////////////////////////////////////// map() ///////////////////////////
+
+// returns a new Array containing the results of calling 
+// a function on every elemen in this array
+
+// const price =[100,25,10000,529,400,49];
+
+// let newPrice = price.map((curElem,index,arr)=>{
+//     return curElem>499;
+// })
+// console.log(price);
+// console.log(newPrice);
+
+
+// find sq root 
+
+// let arrSqr = price.map((curElem)=>{
+//       return Math.sqrt(curElem);
+// })
+
+// console.log(arrSqr);
+
+
+// ////multiply and return which is greater than 50
+// let arrSqr = price.map((curElem)=>{
+//     return curElem*2;
+// }).filter((cur)=>{
+//     return cur>500;
+// })
+
+// console.log(arrSqr);
+
+
+/////////////////////////////reduce method///////////////
+
+
+// flatten an array means to convert the 3d or 2d array 
+// into a single dimensional array
+
+// let arr =[5,6,4];
+
+// let sum = arr.reduce((accumulator,cur)=>{
+//     return accumulator +=cur;
+// });
+
+// console.log(sum)
+
+
+
+
+
+
+
+// //////////////////////////////abouve exapmle using reduce
+// let arrSqr = price.map((curElem)=>{
+//     return curElem*2;
+// }).filter((cur)=>{
+//     return cur>500;
+// }).reduce((accumulator,cur)=>{
+//     return accumulator +=cur;
+// });
+
+// console.log(arrSqr);
+
+
+//2d to 1d
+
+// const arr = [
+//     ['zone_1','zone_2'],
+//     ['zone_3','zone_4'],
+//     ['zone_5','zone_6'],
+//     ['zone_7','zone_8']
+// ];
+
+// let flatArr = arr.reduce((accum,cur)=>{
+//     return accum.concat(cur);
+// })
+
+// console.log(flatArr);
+
+
+///////////////////////////////////////////////////////strings in javascript///////////////////////////
 
