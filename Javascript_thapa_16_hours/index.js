@@ -390,5 +390,110 @@
 // console.log(flatArr);
 
 
-///////////////////////////////////////////////////////strings in javascript///////////////////////////
+///////////////////////////////////////////////////////  strings in javascript   ///////////////////////////
 
+
+////escape character
+
+// let anySentence ="we are the so called \"sandeep\" bhat";
+
+// let anySentence ='we are the so called "sandeep" bhat';
+
+// console.log(anySentence);
+
+//////////////////finding a string in a string
+
+
+// let anySentence ='we are the so called sandeep bhat';
+
+// console.log(anySentence.indexOf("the"));
+
+
+///lastIndexOf()
+
+// let anySentence ='we are the so called sandeep bhat';
+
+// console.log(anySentence.lastIndexOf("the"));
+
+
+/////////searching for a string in a string
+
+
+//search() method
+// let anySentence ='we are the so called sandeep bhat';
+
+// console.log(anySentence.search("so"));
+
+
+///////////////////////Extracting String Parts
+
+// slice(start,end )
+// substring(start,end)
+// substr(start,length)
+
+// var str = "apple, banana, kiwi";
+
+// let res = str.slice(0,4);
+// console.log(res);
+
+//some assignment
+
+/////////////////////////substring()
+
+
+// var str = "apple, banana, kiwi";
+
+// let res = str.substring(8,-2);
+// console.log(res);
+
+
+///////////////////////substr()
+
+// var str = "apple, banana, kiwi";
+
+// let res = str.substr(8);
+// console.log(res);
+
+
+// difference between substr and substring
+
+
+///////////////////////////////////////////Replacing String Content()
+
+// .replace(searchFor,replaceWith)
+
+// let myBioData = 'I am sandeep bhat am am';
+
+// console.log(myBioData.replace('am','AM'));
+
+
+//////////////////////////////////////////Extracting String Characters
+
+//charAt(position)
+//charCodeAt(position)
+// Property access [ ]
+
+
+//////////////////////////charAt(position)
+//  let str = "hello";
+
+
+//  console.log(str.charAt(0));
+
+
+//  ///////////////////////////charCodeAt(position)
+//  console.log(str.charCodeAt(0));
+
+//////////////////////////////// Property access [ ]
+
+// console.log(str[0]);
+
+//////////////////////////////////concat()
+//////////////////////////toUpperCase()
+//////////////////////////toLowerCase()
+
+
+///////////////////////////////////.trim()
+
+
+/////////////////////converting a string to an array use .split() method
