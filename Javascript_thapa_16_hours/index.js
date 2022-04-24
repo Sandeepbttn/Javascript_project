@@ -496,4 +496,166 @@
 ///////////////////////////////////.trim()
 
 
-/////////////////////converting a string to an array use .split() method
+//////////////  converting a string to an array use .split() method
+
+
+
+////////////////////////////////////////////DATE and TIME in JAVASCRIPT
+
+// there are 4 ways to create a new date object:
+
+// new Date()
+// new Date(year,month,day,hours,minutes,seconds,milliseconds)
+// // it takes  7 arguments
+
+// new Date(milliseconds)
+
+// new Date(date string)
+
+
+///////new Date()
+
+
+// console.log(new Date());     //     not india time
+// console.log(new Date().toLocaleString());   //it will show correct time  india time
+// console.log(new Date().toString());
+
+///////////Date.now()
+
+// it will return miiliseconds elapsed since jan 1 1970
+// console.log(Date.now());
+
+///////////new Date(year,month,...)
+
+// console.log(new Date(2021,0,5,10,33,20,0));
+
+////////////new Date(dateString)
+
+// console.log(new Date("October 13,2021 11:13:00"));
+
+
+///////////////////Date methods
+
+const curDate = new Date();
+
+// how to get the indiviual date 
+
+// console.log(curDate.toLocaleString());
+// console.log(curDate.getFullYear());
+// console.log(curDate.getMonth());
+// console.log(curDate.getDay())
+// console.log(curDate.getDate())
+
+
+
+
+
+////how to set the indiviual date
+
+
+// console.log(curDate.setFullYear(2022,10,5));
+// console.log(curDate.setMonth(10));
+// // console.log(curDate.setDay(3))
+// console.log(curDate.setDate(4))
+
+
+
+//////////////////////// Time Methods
+
+// const curTime = new Date();
+
+// how to get the indiviual time
+
+// console.log(curTime.getTime());
+// console.log(curTime.getHours());
+// console.log(curTime.getMinutes());
+// console.log(curTime.getMilliseconds());
+ 
+
+// using setTime to set the time()
+
+
+
+// practice time
+
+// console.log(curDate.toLocaleTimeString());
+// console.log(curDate.toLocaleDateString());
+
+
+// ///////////////////////////////////////////////   Math Object in Javascript
+
+// to perform math tasks on numbers.
+
+
+// console.log(Math.PI);
+
+// console.log(Math.round(10.745));
+
+// console.log(Math.pow(2,2));
+
+// console.log(Math.sqrt(25));
+
+// console.log(Math.abs(-245));
+
+// console.log(Math.ceil(2.2));
+
+
+// console.log(Math.floor(2.2));
+
+// console.log(Math.max(2,3));
+
+// console.log(Math.min(2,9));
+
+// console.log(Math.random()*10);
+
+// console.log(Math.trunc(2.2));
+
+
+// ////////////////////////////////////////////////////   DOM in Javascript
+
+// DOM, BOM, WINDOW OBJECT 
+
+// Difference between dom and bom;
+
+
+//  window properties;
+// document.documentElement
+
+// document.head
+// document.body
+// document.body.childNodes
+// document.children
+// document.childNodes.length
+
+
+
+// practice time
+// how to check whether an element has child nodes or not ?
+// we will use haschildNodes()
+
+
+// practice time 
+// how to find the child in DOM tree
+// firstChild s firstElementChild
+// lastChild vs lastElementChild
+
+// const data = document.body.firstElementChild;
+
+// data
+// data.firstElementChild
+// data.firstElementChild.firstElementChild
+
+// .document.body.nextSibling
+
+//  getElementsByName();
+
+
+//////////////////////////// how to search the elements and the References
+
+
+//  Difference between getElementById and querySelector vs getElementsByClassName() vs getElementsByTagName() vs getElementsByName();
+
+
+
+
+//////////////////////////////////////////Events in JAVscript
