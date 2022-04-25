@@ -659,3 +659,70 @@ const curDate = new Date();
 
 
 //////////////////////////////////////////Events in JAVscript
+
+// 4 ways of writing events in javascript
+
+// 1. using inline events alert()
+// 2. by calling a function 
+// 3. using inline events
+// 4. using event listeners
+
+
+// check thhe events HTML file
+
+
+
+// 1st way 
+{/* <a onclick="alert('I am 1st way')"></a> */}
+
+// 2nd way
+// const callingFunction = ()=>{
+//     alert('2nd way ');
+// }
+
+// 3rd way
+
+// const thirdWay = document.getElementById('thirdWay');
+// thirdWay.onclick= function(){
+    //     alert('most common way of writing function again');
+    // }
+    
+
+// 4th way
+// const fourthWay = document.querySelector('#fouthWay');
+
+// fourthWay.addEventListener('click',()=>{
+    //     alert("4th way");
+    // })
+
+
+    // what is event object?
+    // event object is the parent object of the event object.
+    // for example
+    // MouseEvent,FocusEvent,KeyboardEvent etc
+
+    // MouseEvent in Javascript
+    // mouseDown(), mouseUp(),mouseenter(),mouseleave()
+
+    // keyboardEvent in JS
+//  onkeypress(),onkeydown(),onkeyup()
+
+
+    // InputEvent in JS
+
+
+
+    // interview questions
+    // onclick vs addEventListener
+
+
+    /////////////////////////////////////////////////Timing based events in JS
+     //setTimeout()
+    //  setInterval()
+    // clearTimeout()
+    // clearInterval()
+
+    // interview questions
+
+//   10:48
+    //////////////////////////////////////////////OOPS in JS
