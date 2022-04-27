@@ -725,4 +725,172 @@ const curDate = new Date();
     // interview questions
 
 //   10:48
+
+
     //////////////////////////////////////////////OOPS in JS
+
+// what is object literals?
+//   it is simply a key :value pair data structure.
+
+// how to create an object?
+
+// 1st way
+ 
+// let bioData = {
+//     myName: "sandeep",
+//     age:22,
+//     getData: function(){
+//         console.log(`my name  is ${this.myName} and age is ${this.age}`);
+//     }
+// };
+
+// (bioData.getData());
+
+// 2nd way no need to write functions as well after es6
+
+// let bioData = {
+//     myName: "sandeep",
+//     age:22,
+//     getData (){
+//         console.log(`my name  is ${this.myName} and age is ${this.age}`);
+//     }
+// };
+
+// (bioData.getData());
+
+// what is "this" objects?
+
+// the defination of "this" object is that it contain the current context.
+// the this object can hve different values depending on where it  is plcaed.
+
+
+// for example 1
+// console.log(this);
+
+// it refers to the current context and that is window global object
+
+// // ex 2
+// function myName(){
+//     console.log(this);
+// }
+// myName();
+
+
+// ex3
+
+// ex4
+
+// ex5
+// this object  will not work with arrow function
+// const obj ={
+//     myAge : 23,
+//     myName:()=>{
+//         console.log(this);
+//     }
+// }
+// obj.myName();
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////  Destructuring    /////////////////////////////////////////////
+
+
+// // array Destructuring
+// const myData = ['vinod','thapa',23];
+
+// let [myFName,lName,age]= myData;
+
+// console.log(age);
+
+
+// object Destructuring
+
+// const data = {
+//     first:'sandeep',
+//     last:'bhatt',
+//     age:25
+// }
+
+// let {first,last,age}= data;
+
+// console.log(first);
+
+
+/////////////////////////////Object properties
+
+
+// dynamic data in object
+// const name ="sandeep";
+
+// const myBio={
+//     [name]:"hello how are you?",
+//     [20+2]:"is my age"
+// }
+
+// console.log(myBio);
+
+
+
+////////// no need to erite key and value, if both are same
+
+// const name= "sandeep";
+// const age = 23;
+
+// const bio = {name , age}
+
+// console.log(bio);
+
+
+
+
+///////////////////////////Spread operator
+
+// const colors = ['red','green','blue','white'];
+
+// const FavCol = ['yellow', ...colors];
+
+// console.log(FavCol);
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////ES7 features 
+
+// 1: array include
+// 2: exponentiation operator
+
+////////////////////////////////
+//////ES8 features
+
+// string padding
+// object.values()
+// object.entries()
+
+
+// ES2018
+
+// const person = { name:'sandeep',age:32};
+// const sper = {...person};
+
+// console.log(person);
+
+
+// es2019
+// flat method
+
+//console.log(arr.flat(Infinity));     //for multiple dimension array 
+// flatmap
+
+// ES2020
+// BigInt
+// let oldNum = Number.MAX_SAFE_INTEGER;
+// console.log(9999999999999999999n + 13n);
+
+// nullish 
+
+// // ES2014
+// "use strict"
+
+// x = 3.24;
+// console.log(x);
+
+
