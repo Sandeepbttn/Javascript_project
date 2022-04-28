@@ -894,3 +894,99 @@ const curDate = new Date();
 // console.log(x);
 
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////Advance javascript ////////////////////////////////////////
+
+/////////////// event propagation (Event bubbling and event capturing)
+
+// capturing event happend top to bottom and bubble bottom to top
+// then showing example
+// to stop the event propagation we use event.stopPropagation();
+// by deafault it use bubble
+
+// parentId.addEventListener('click',parentCall,true  ); by default its false   //if you want capturing event
+
+
+//////////////// higher order function
+///////////////// callback function
+
+// const add =(a,b)=>{
+//     return a+b;
+// }
+// const subs =(a,b)=>{
+//     return Math.abs(a-b);
+// }
+
+// const calculator =( num1,num2,operator)=>{
+//     return operator(num1,num2);
+// }
+
+// calculator(5,3,add);
+
+
+// so calculator is higher order function
+// and add and subs are callback functions
+
+
+// diffrence bwtween higher order  function and callback function
+
+
+
+///////////////////function currying (we will see after async JS section)
+
+/////////////Hoisting in JavaScript
+//  example 
+// console.log(myName);
+// var myName;
+// myName="Samdeep";
+
+// it wont work with let and const
+
+///////////////Scope chain and lexical scooping in JS
+
+// in lexical scooping the parent can not access the value
+
+///////////////////////what is Closures in JS
+
+// a closures is the combination of a function bundled together with refferences 
+// to  its surrounding state (the lexical environment).
+
+// in other words , closure gives you
+// access to an outer function's scope  from an inner function
+
+// closures are created every time a function is created at function creation time.
+
+
+// // for  example 
+// const outerfun=(a)=>{
+//     let b=10;
+//     const innerFun=()=>{
+//         let sum= a+b;
+//         console.log(sum);
+//     }
+//     innerFun();
+// }
+// outerfun(5);
+
+
+// interview
+// diffrence between synchronous and asynchronous javascript
+
+// synchronous
+
+// asynchronous
+
+
+/////////////////////////// EVENT LOOP in javascript
+
+
+
+
+
+//////////////// callback hell
+//////////////// ajax call using XMLHttprequest
+//////////////// BONUS section JSON
+//////////////// fetch API
+//////////////// promises
+//////////////// Async- await
+///////////////// error handling in JS
