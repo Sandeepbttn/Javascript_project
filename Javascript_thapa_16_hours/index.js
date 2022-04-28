@@ -932,7 +932,6 @@ const curDate = new Date();
 
 
 
-///////////////////function currying (we will see after async JS section)
 
 /////////////Hoisting in JavaScript
 //  example 
@@ -959,31 +958,48 @@ const curDate = new Date();
 
 // // for  example 
 // const outerfun=(a)=>{
-//     let b=10;
-//     const innerFun=()=>{
-//         let sum= a+b;
-//         console.log(sum);
-//     }
-//     innerFun();
-// }
-// outerfun(5);
+    //     let b=10;
+    //     const innerFun=()=>{
+        //         let sum= a+b;
+        //         console.log(sum);
+        //     }
+        //     innerFun();
+        // }
+        // outerfun(5);
+        
+        
+        // interview
+        // diffrence between synchronous and asynchronous javascript
+        
+        // synchronous
+        
+        // asynchronous
+        
+        
+        /////////////////////////// EVENT LOOP in javascript
+        
+        // explaining using diagram
+        
+        
+///////////////////function currying (we will see after async JS section)
+        
+        // interview questions  
+        // what will be output of sum(4)(5)(8)?
 
-
-// interview
-// diffrence between synchronous and asynchronous javascript
-
-// synchronous
-
-// asynchronous
-
-
-/////////////////////////// EVENT LOOP in javascript
-
-
-
-
+        // curring
+        // function sum(num1){
+        //     // console.log(num1);
+        //     return function(num2){
+        //         // console.log(num1,num2);
+        //         return function(num3){
+        //                 console.log(num1+num2+num3)
+        //         }
+        //     }
+        // }
 
 //////////////// callback hell
+//  13:30:00
+
 //////////////// ajax call using XMLHttprequest
 //////////////// BONUS section JSON
 //////////////// fetch API
