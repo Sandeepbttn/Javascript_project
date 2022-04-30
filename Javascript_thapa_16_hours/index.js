@@ -1060,21 +1060,21 @@ const curDate = new Date();
 
 //////////////// Async- await
 
-const generateJokes = async() => {
-    try{   
-    const setHeader = {
-            headers: {
-                Accept : "application/json"
-            }
-        }
+// const generateJokes = async() => {
+//     try{   
+//     const setHeader = {
+//             headers: {
+//                 Accept : "application/json"
+//             }
+//         }
     
-      const res = await  fetch('https://icanhazdadjoke.com', setHeader)
-      const data = await res.json();
-      generateJokes.innerHTML = data.joke;   
-    }catch(err){
-        console.log(err);
-    }
-    }
+//       const res = await  fetch('https://icanhazdadjoke.com', setHeader)
+//       const data = await res.json();
+//       generateJokes.innerHTML = data.joke;   
+//     }catch(err){
+//         console.log(err);
+//     }
+//     }
 
 
 
