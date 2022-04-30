@@ -1001,8 +1001,62 @@ const curDate = new Date();
 //  13:30:00
 
 //////////////// ajax call using XMLHttprequest
+
+// {/* <div id = "container"></div> */}
+// <script>
+//     const container = document.querySelector('#container');
+//     const request = new XMLHttprequest();
+
+//     request.open('GET',"https://whatever_API_you_want_to use");
+//     request.send();
+
+//     {/* to get the response */}
+//     request.addEventListener('load',function(){
+//         const [data] = JSON.parse(this.responseText);
+//     })
+// </script>
+
+
 //////////////// BONUS section JSON
-//////////////// fetch API
+
+// JSON.stringify turns a javascript object into JSON text and 
+// stores that JSON text in a string , eg:
+
+// var my_object = { key_1: "some text", key_2:true, key_3:5};
+
+// var object_as_string = JSON.stringify(my_object);
+// output   {"key_1":"some text","key_2":true,"key_3":5}
+
+// console.log(object_as_string)
+
+
+// JSON.parse turns a string of JSON text into a Javascript object, eg:
+
+// var object_as_string_as_object = JSON.parse(object_as_string)
+
+// console.log(object_as_string_as_object);
+
+
+////////////////fetch API and using promises
 //////////////// promises
+
+// const generateJokes = () => {
+//     const setHeader = {
+//         headers: {
+//             Accept : "application/json"
+//         }
+//     }
+
+//     fetch('https://icanhazdadjoke.com', setHeader)
+//     .then((res)=>(res.json()))
+//     .then((data)=>{
+//         generateJokes.innHTML = data.joke;
+//     })
+//     .catch((error)=>{
+//         console.log(error);
+//     })
+// }
+
+
 //////////////// Async- await
 ///////////////// error handling in JS
